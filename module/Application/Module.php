@@ -17,14 +17,14 @@ class Module
 {
     public function onBootstrap(MvcEvent $e)
     {
-        
-        // Route listener is created for module, allowing it to 
+
+        // Route listener is created for module, allowing it to
         // handle dispatching
         $I_application       = $e->getApplication();
         $I_eventManager      = $I_application->getEventManager();
         $moduleRouteListener = new ModuleRouteListener();
         $moduleRouteListener->attach($I_eventManager);
-        
+
     }
 
     public function getConfig()
@@ -42,12 +42,13 @@ class Module
             ),
         );
     }
-    
+
     public function getViewHelperConfig()
     {
         return array(
-            'invokables' => array( 'displayDate' => 'Application\View\Helper\DisplayDate' ),
+            'invokables' => array( 'displayDate' => 'Application\View\Helper\DisplayDate',
+                                   'getHostName' => 'Application\View\Helper\GetHostName' ),
         );
     }
-    
+
 }

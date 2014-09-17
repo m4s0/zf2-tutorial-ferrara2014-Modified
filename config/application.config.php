@@ -5,6 +5,7 @@ return array(
         
         // our app modules
         'Application',
+        'ZendDeveloperToolBar'
         
     ),
 

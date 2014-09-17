@@ -1,13 +1,11 @@
 // initialise plugins
 
-jQuery(function(){
+jQuery(function () {
 
-        /*
-        $( document ).ready(function() {
-            alert(x);
-        });
-        */
-    
+    $(document).ready(function () {
+        alert(x);
+    });
+
 });
 
 

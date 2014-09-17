@@ -18,15 +18,15 @@ if (true) {
 $risultato = 100;
 
 // Don't do something like this...
-$this->inlineScript()->appendScript(<<<EOT
-$( document ).ready(function() {
-    alert($risultato);
-});
-EOT
-);
+//$this->inlineScript()->appendScript(<<<EOT
+//$( document ).ready(function() {
+//    alert($risultato);
+//});
+//EOT
+//);
 
 // Rather go for:
-// $this->inlineScript()->appendScript("var x=".$risultato);
+ $this->inlineScript()->appendScript("var x=".$risultato);
 
 // Or:
 //$this->inlineScript()->captureStart();
