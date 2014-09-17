@@ -23,6 +23,11 @@ echo $this->headScript()->prependFile('/js/jquery-1.4.2.js')
 ?>
 </head>
 <body id="about">
+<div class="title-page">
+    <hgroup>
+        <h2>Best Conferences</h2>
+    </hgroup>
+</div>
 <div id="page">
   <div class="header-top">
     <div class="wrap">
@@ -33,6 +38,7 @@ echo $this->headScript()->prependFile('/js/jquery-1.4.2.js')
   </div>
   <header id="header" class="clearfix">
     <div class="wrap">
+        <
       <h1 id="logo"><a href="<?php echo $this->url('home'); ?>"></a></h1>
       <?php echo $this->partial('partials/mainmenu.phtml'); ?>
     </div>
@@ -43,6 +49,7 @@ echo $this->headScript()->prependFile('/js/jquery-1.4.2.js')
 
             <?php echo $this->content; ?>
 </div>
+
   <!-- END: main-->
   <?php echo $this->partial('partials/footer.phtml'); ?>
   <!-- END: main--> 
