@@ -36,7 +36,7 @@ class EventsEndToEndTest extends AbstractHttpControllerTestCase {
         
         $this->assertQueryContentContains("div.title-page hgroup h2", "Best Conferences");
         
-        $this->assertQueryContentContains("#content div.conferences div.events-head h4", "Conference List");
+        $this->assertQueryContentContains("#content div.conferences div.events-head h4", "git br");
         
     }
     
